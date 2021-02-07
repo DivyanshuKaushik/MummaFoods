@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#logo {
+    opacity: 0.68;
+}
+
+#logo img {
+    display: flex;
+    margin-right: 6px;
+    height: 85px;
+    width: 150px;
+   
+}
+
+#navbar::before {
+    content: "";
+    background-color: #000000;
+    position: absolute;
+    opacity: 0.8;
+    top: 0px;
+    left: 0px;
+    height: 85px;
+    width: 100%;
+    z-index: -1;
+}
+
+#navbar {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar ul li {
+    text-decoration: none;
+    list-style: none;
+    margin: 6px;
+}
+
+#navbar ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 6px;
+}
+
+#navbar ul li a:hover {
+    color: yellow;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(90, 81, 81, 0.75)
+}
+
+
+/* home css */
+
+#home::before {
+    content: "";
+    background: url(../img/mainbg.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home {
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+    padding: 110px;
+    margin: 40px;
+    color: black;
+}
+
+#home p {
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+
+/* services */
+
+#services{
+    display: flex;
+    margin: 34px;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+#services .box img{
+    display: block;
+    height: 100px;
+    margin: auto;
+}
+
+/* Contact section */
+#contact{
+    position: relative;
+}
+#contact-form::before{
+    content: "";
+    background: url("../img/contact.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#contact-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 130px;
+}
+
+#contact-form label{
+    font-size: 1.5rem;
+}
+#contact-form input,#contact textarea{
+    border: 2px solid black;
+    margin : 0.6rem;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    opacity: 0.75;
+}
+
+
+
+/* utilities  */
+
+.h-primary {
+    font-size: 3.8rem;
+}
+.center{
+    text-align: center;
+}
+.btn{
+    border: 2px solid rgb(191, 191, 191);
+    color: rgb(253, 200, 83);
+    background-color: rgba(131, 131, 131, 0.3);
+    border-radius: 10px;
+    font-size: 1.1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+
+footer{
+    background-color: rgba(21, 2, 2, 0.3);
+    margin-top: 67px;
+    padding: 10px;
+}
